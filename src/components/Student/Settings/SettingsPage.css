@@ -1,0 +1,22 @@
+.cardContainer {
+    max-width: 600px;
+    margin: 90px auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 24px;
+    background-color: #ffffff;
+  }
+  
+  .tabPane {
+    padding-top: 12px;
+  }
+  
+  .formItem {
+    margin-bottom: 16px;
+  }
+  
+  .submitButton {
+    margin-top: 16px;
+    width: 100%;
+  }
+  

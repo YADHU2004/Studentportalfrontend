@@ -1,0 +1,37 @@
+.header {
+  color: rgb(255, 255, 255) !important; /* Ensures header text is white */
+  text-align: center; /* Centers the text horizontally */
+  display: flex;
+  justify-content: center; /* Centers horizontally within the flex container */
+  align-items: center; /* Centers vertically within the flex container */
+  height: 64px; /* Set a default height for consistency */
+  background: #001529 !important;
+  padding: 0 20px; /* Added horizontal padding */
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 32px; /* Default font size */
+  color: white; /* Ensures the title text is white */
+}
+
+/* Responsive adjustments for larger screens */
+@media only screen and (max-width: 1400px) {
+  .header {
+    height: 60px; /* Adjust height for medium screens */
+  }
+}
+
+/* Mobile-specific styles */
+@media only screen and (max-width: 650px) {
+  .header {
+    padding: 0 !important;
+    overflow: hidden;
+    height: auto; /* Allow height to adjust based on content */
+  }
+  .header h1 {
+    font-size: 25px !important; /* Adjust title size for small screens */
+    padding-top: 20px;
+    color: white; /* Ensure the title remains white on small screens */
+  }
+}

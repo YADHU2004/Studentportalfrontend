@@ -1,0 +1,16 @@
+.footer {
+  background-color: #001529; /* Ant Design dark header color */
+  color: white;
+  padding: 16px 0;
+  width: 100%;
+  position: relative;
+  bottom: auto;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 14px;
+}

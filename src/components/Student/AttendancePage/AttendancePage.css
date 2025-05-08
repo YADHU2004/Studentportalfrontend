@@ -1,0 +1,28 @@
+.attendancePage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 80px;
+    padding: 16px;
+    margin-left: -75px; 
+  }
+  
+  /* Style for individual cards (optional, if not styled already inside AttendanceCard) */
+  .attendancePage > * {
+    flex: 1 1 250px; /* Each card takes minimum 250px, grows as needed */
+    max-width: 300px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .attendancePage {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .attendancePage > * {
+      max-width: 90%;
+      width: 100%;
+    }
+  }
+  
