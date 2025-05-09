@@ -1,7 +1,7 @@
 import React from "react";
 import { Form, Input, Tooltip, Select, Checkbox, Button } from "antd";
 import { InfoCircleOutlined } from "@ant-design/icons";
-import Classes from "../Login/Login.module.css";
+import Classes from "./Register.module.css";
 
 const { Option } = Select;
 
@@ -10,6 +10,8 @@ const RegisterForm = () => {
 
   return (
     <div className={Classes.pagecenter}>
+        <div className={Classes.registerFormContainer}>
+        <h2 className={Classes.formTitle}>Create Account</h2> 
       <Form
         form={form}
         layout="horizontal"
@@ -107,6 +109,7 @@ const RegisterForm = () => {
           </a>
         </Form.Item>
       </Form>
+    </div>
     </div>
   );
 };

@@ -27,7 +27,7 @@ function App() {
           path="/register"
           element={
             <>
-              <Header />
+              
               <Layout.Content>
                 <RegisterForm />
               </Layout.Content>

@@ -1,0 +1,63 @@
+.pagecenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ece9e6, #ffffff);
+    padding: 20px;
+  }
+  
+  .registerFormContainer {
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 480px;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .registerFormContainer:hover {
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+  }
+  
+  .ant-form-item-label > label {
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .ant-input,
+  .ant-input-password {
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 15px;
+  }
+  
+  .ant-btn-primary {
+    background-color: #1677ff;
+    border-color: #1677ff;
+    font-weight: bold;
+    width: 100%;
+    border-radius: 8px;
+    height: 40px;
+  }
+  
+  .ant-btn-primary:hover {
+    background-color: #0f5ed7;
+    border-color: #0f5ed7;
+  }
+  
+  a {
+    color: #1677ff;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  .formTitle {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+  }
