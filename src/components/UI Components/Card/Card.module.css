@@ -1,95 +1,107 @@
 
-  .card-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  
-  .card img {
-    width: 100%;
-    height: 200px !important; /* Set a fixed height for the image */
-    object-fit: cover; /* Ensure the image covers the area without distortion */
-  }
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card img {
+  width: 100%;
+  height: 200px !important;
+  object-fit: cover;
+}
 
 .card {
-    width: 300px;
-    height: fit-content;
-    margin-top: 25px !important;
+  width: 300px;
+  height: fit-content;
+  margin-top: 25px !important;
+}
+
+.chart {
+  box-shadow: #0000001a -4px 7px 20px 0px;
+  height: fit-content;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 400px;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chart:hover {
+  box-shadow: #0000001a 4px -7px 20px 0px;
+}
+
+.chart h1 {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.chartWrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.floatingWindow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+  min-width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.attendance-item {
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+}
+
+.attendance-item span {
+  font-weight: bold;
+  display: block;
+}
+
+.present {
+  color: #008000;
+}
+
+.absent {
+  color: #b22222;
+}
+
+@media only screen and (max-width: 650px) {
+  .card {
+    width: 200px;
   }
-  
+  .card img {
+    height: 150px !important;
+  }
   .chart {
-    box-shadow: #0000001a -4px 7px 20px 0px;
-    height: fit-content;
-    margin: 0 auto;
-    padding: 20px;
-    max-width: 400px;
-    border-radius: 5px;
-    transition: all 0.5s ease;
-    cursor: pointer;
-    background: white;
-    display: flex;
-    flex-direction: row;  /* Change from column to row */
-    
+    width: fit-content;
+    padding: 10px;
+    margin: 10px 0;
   }
-  
-  .chart:hover {
-    box-shadow: #0000001a 4px -7px 20px 0px;
+  .floatingWindow {
+    min-width: 120px;
+    padding: 8px;
+    font-size: 12px;
   }
-  
-  .chart h1 {
-    margin-top: 20px;
-    font-size: 18px;
-    font-weight: bold;
-    color: #333;
-  }
-  
-  .attendance-container {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
-    margin-left: 20px; /* Add space between chart and attendance items */
-  }
-  
   .attendance-item {
-    text-align: center;
-    font-size: 14px;
-    color: #333;
+    font-size: 12px;
   }
-  
-  .attendance-item span {
-    font-weight: bold;
-    display: block;
-  }
-  
-  .present {
-    color: #008000;
-  }
-  
-  .absent {
-    color: #b22222;
-  }
-  
-  @media only screen and (max-width: 650px) {
-    .card {
-      width: 200px;
-    }
-    .card img {
-      height: 150px !important;
-    }
-    .chart {
-      width: fit-content;
-      padding: 10px 0px;
-      margin: 10px 0px;
-      flex-direction: column; /* Stack the chart and attendance vertically on smaller screens */
-    }
-    .attendance-container {
-      margin-left: 0; /* Reset margin on small screens */
-      flex-direction: column; /* Stack attendance vertically on small screens */
-    }
-    .attendance-item {
-      margin: 10px 0;
-    }
-  }
-  
+}

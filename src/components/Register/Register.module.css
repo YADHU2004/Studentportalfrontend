@@ -3,11 +3,12 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(135deg, #ece9e6, #ffffff);
+    background: url('https://plus.unsplash.com/premium_photo-1701760184917-38e25718ee3e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bG9naW4lMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww') no-repeat center center fixed;
+    background-size: cover;
     padding: 20px;
-  }
-  
-  .registerFormContainer {
+}
+
+.registerFormContainer {
     background-color: #fff;
     padding: 40px 30px;
     border-radius: 12px;
@@ -15,49 +16,50 @@
     width: 100%;
     max-width: 480px;
     transition: box-shadow 0.3s ease;
-  }
-  
-  .registerFormContainer:hover {
+}
+
+.registerFormContainer:hover {
     box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
-  }
-  
-  .ant-form-item-label > label {
+}
+
+.ant-form-item-label > label {
     font-weight: 600;
     color: #333;
-  }
-  
-  .ant-input,
-  .ant-input-password {
+}
+
+.ant-input,
+.ant-input-password {
     border-radius: 8px;
     padding: 10px;
     font-size: 15px;
-  }
-  
-  .ant-btn-primary {
+}
+
+.ant-btn-primary {
     background-color: #1677ff;
     border-color: #1677ff;
     font-weight: bold;
     width: 100%;
     border-radius: 8px;
     height: 40px;
-  }
-  
-  .ant-btn-primary:hover {
+}
+
+.ant-btn-primary:hover {
     background-color: #0f5ed7;
     border-color: #0f5ed7;
-  }
-  
-  a {
+}
+
+a {
     color: #1677ff;
-  }
-  
-  a:hover {
+}
+
+a:hover {
     text-decoration: underline;
-  }
-  .formTitle {
+}
+
+.formTitle {
     text-align: center;
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 20px;
     color: #333;
-  }
+}

@@ -76,7 +76,7 @@ class SideMenu extends Component {
             <Link to="/student/settings">Settings</Link>
           </Menu.Item>
           <Menu.Item key="5" icon={<LogoutOutlined />}>
-            <Link to="/">Log Out</Link>
+            <Link to="/Login">Log Out</Link>
           </Menu.Item>
         </Menu>
       </Sider>

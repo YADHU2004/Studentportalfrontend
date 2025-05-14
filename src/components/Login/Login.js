@@ -138,7 +138,7 @@ const LoginForm = () => {
     <div className={Classes.pagecenter}>
       <div className={Classes.logincontainer}>
         <Title level={2} className={Classes.header}>
-          Student Portal
+          Elite Scholar's Student Portal
         </Title>
         <UserOutlined className={Classes.usericon} />
 

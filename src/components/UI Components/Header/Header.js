@@ -9,7 +9,7 @@ class Header extends Component {
       <Layout.Header className={Classes.header}>
         <Link to="/StudentHome" className={Classes.link}>
           <Typography.Title level={1} className={Classes.title}>
-            Student Portal
+          Elite Scholar's Student Portal
           </Typography.Title>
         </Link>
       </Layout.Header>

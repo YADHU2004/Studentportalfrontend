@@ -1,24 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
 .header {
-  color: rgb(255, 255, 255) !important; /* Ensures header text is white */
-  text-align: center; /* Centers the text horizontally */
+  color: rgb(0, 0, 0) !important;
+  text-align: center;
   display: flex;
-  justify-content: center; /* Centers horizontally within the flex container */
-  align-items: center; /* Centers vertically within the flex container */
-  height: 64px; /* Set a default height for consistency */
+  justify-content: center;
+  align-items: center;
+  height: 64px;
   background: #001529 !important;
-  padding: 0 20px; /* Added horizontal padding */
+  padding: 0 20px;
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 600;
 }
 
-.header h1 {
-  margin: 0;
-  font-size: 32px; /* Default font size */
-  color: white; /* Ensures the title text is white */
+.title {
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 32px;
+  color: rgb(183, 126, 126) !important;
+  font-family: 'Poppins', sans-serif !important;
+  line-height: 1 !important;
+  display: inline-flex; /* Ensure title behaves as flex item */
+  align-items: center; /* Center vertically within itself */
+  height: 100%; /* Match parent height for centering */
 }
 
 /* Responsive adjustments for larger screens */
 @media only screen and (max-width: 1400px) {
   .header {
-    height: 60px; /* Adjust height for medium screens */
+    height: 60px;
   }
 }
 
@@ -27,11 +37,16 @@
   .header {
     padding: 0 !important;
     overflow: hidden;
-    height: auto; /* Allow height to adjust based on content */
+    height: auto;
   }
-  .header h1 {
-    font-size: 25px !important; /* Adjust title size for small screens */
-    padding-top: 20px;
-    color: white; /* Ensure the title remains white on small screens */
+  .title {
+    font-size: 25px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    color: rgb(0, 0, 0) !important;
+    line-height: 1 !important;
+    height: auto; /* Allow natural height on mobile */
+    display: inline-flex;
+    align-items: center;
   }
 }
