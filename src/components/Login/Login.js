@@ -118,8 +118,8 @@ const LoginForm = () => {
     const { username, password } = values;
 
     const validUsers = [
-      { email: "717821l163@gmail.com", password: "student" },
-      { email: "717821l101@gmail.com", password: "student" },
+      { email: "717821l163", password: "student" },
+      { email: "717821l159", password: "student" },
     ];
 
     const isValid = validUsers.some(
