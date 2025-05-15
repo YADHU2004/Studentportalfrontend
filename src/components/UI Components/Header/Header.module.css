@@ -1,63 +1,23 @@
-/*@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
-.header {
-  color: rgb(0, 0, 0) !important;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 64px;
-  background: #001529 !important;
-  padding: 0 20px;
-  font-family: 'Poppins', sans-serif !important;
-  font-weight: 600;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
-.title {
-  margin: 0 !important;
-  padding: 0 !important;
-  font-size: 32px;
-  color: rgb(183, 126, 126) !important;
-  font-family: 'Poppins', sans-serif !important;
-  line-height: 1 !important;
-  display: inline-flex; 
-  align-items: center; 
-  height: 100%; 
-}
-
-@media only screen and (max-width: 1400px) {
-  .header {
-    height: 60px;
-  }
-}
-
-@media only screen and (max-width: 650px) {
-  .header {
-    padding: 0 !important;
-    overflow: hidden;
-    height: auto;
-  }
-  .title {
-    font-size: 25px !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    color: rgb(0, 0, 0) !important;
-    line-height: 1 !important;
-    height: auto; 
-    display: inline-flex;
-    align-items: center;
-  }
-}*/
 .header {
   position: relative;
-  display: flex;
-  justify-content: center; /* Center title */
-  align-items: center;
   height: 64px;
   background: #001529 !important;
-  padding: 0 20px;
   font-family: 'Poppins', sans-serif !important;
   font-weight: 600;
+  padding: 0 20px;
+}
+
+/* Title centered absolutely */
+.titleLink {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-decoration: none; /* prevent underline */
 }
 
 .title {
@@ -67,25 +27,42 @@
   color: rgb(183, 126, 126) !important;
   line-height: 1 !important;
   font-family: 'Poppins', sans-serif !important;
+  cursor: pointer;
 }
 
-.userSection {
+.userInfo {
   position: absolute;
   right: 20px;
   top: 50%;
   transform: translateY(-50%);
   display: flex;
   align-items: center;
+  color: rgb(183, 126, 126);
+  font-size: 16px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.userInfo .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1890ff;
+  color: white;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+  font-size: 18px;
 }
 
 @media only screen and (max-width: 650px) {
   .header {
-    padding: 0 !important;
     height: auto;
+    padding: 10px 20px;
   }
 
   .title {
     font-size: 25px !important;
-    color: rgb(0, 0, 0) !important;
   }
 }
